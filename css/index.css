@@ -5,19 +5,25 @@
 }.header{z-index: 1;
     position: fixed;
     display: flex; 
-    height: 2cm;
+    height: 0cm;
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    padding:1cm;
+} 
+.logoimage{
+   height: -2cm;
+   margin-top: -2cm;
+   font-size: 10;
+}
+.navbar{
+    line-height: 80px;
+margin-top: -1cm;
     justify-content: space-between;
 }
-.navbar{float: right;
-    background-color: rgb(0, 0, 0);
-    height: 6vh;margin-top: 0.5cm;
-/* position: fixed; */
-/* margin-left: 20cm; */
-
-}
 .navbar ul{ 
+    
+    /* background-color: #0e0d0d; */
     font-weight: bold;
     color: white;
     list-style: none;
@@ -25,7 +31,7 @@
     gap: 20px;
     font-size: 20px;
     display: flex;
-   padding-top: 0.5cm;
+   /* padding-top: 0.5cm; */
     margin-right: 40px;
 }
 .navbar ul li a{
@@ -35,111 +41,53 @@
 }
 .navbar ul li a:hover{
     color:black;
-    background-color: rgb(254, 247, 247);
+    background-color: rgb(154, 17, 17);
     padding: 2px;
     border-radius: 3px;
     cursor: pointer;
     /* text-decoration: none; */
 
-}.content{
-    width: 100%;
-    height: 85vh;
-    /* background-color: aquamarine; */
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
+}.homepage{
+   background-image: url(/image/bu4.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
 }
-.content-part1{
-    width: 50%;
-    height: 85vh;
-    /* background-color: red; */
-}.content-part2{ width: 45%;
-    height: 85vh;
-    background-image: url(../image/restoimage.jpg);
-}.content-part1 span{
+.content-part1{ 
+    
+   position: absolute;
+   top: 30%;
+   left: 28%;
+   transform: translate( -50%, -50%5);
+   color:rgb(230, 218, 218);
+   text-align: center;
+    
+}
+.content-part1 span{
     color: rgb(222, 23, 79);
-}.content-part1 h1{
-    font-size: 100;
+}.content-part1 h1{ 
+font-style: italic;
+    font-size: 50px;
     text-align: center;
-    padding-top: 1cm;
+    color: aliceblue;
+    margin-top: -2cm;
+    /* padding-bottom: 80%; */
 }.content-part1 p{
     /* line-height: 1px; */
-    padding-top: 2cm;
-    margin-left: 2cm;
-    font-size: 20px;
-    /* line-height: 0.4cm; */
-}.content-part1 button{
-    border: none;
-    margin-top:2cm;
-    background-color: brown;
-    margin-left: 2cm;
-    font-size: 25px;
-    border-radius: 10px;
-    width: 250px;
-    height: 80px;
-    padding: 15px;
-}
-.product{
-    padding-top: 2cm;
-    padding-bottom: 40px;
-}
-.day-per-day{ padding-top: 4cm;
-    margin-top: 2cm;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1cm;
-}.product-one{
-    font-size: 20px;
-    /* line-height: 1px; */
-}
-h1{
-    text-align: center;
-}.logoimage{
-    background-color: black;
-    /* height: 2px; */
-}
-#product{ 
-    padding-top: 1cm;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(218, 193, 242);
-}
-.product-detail{ 
-    margin-top: 0.5cm;
-    border-radius: 30px;
     padding-top: 0.5cm;
-    height: 85vh;
-    width: 25%; 
-    margin-left: 1.5cm;
-    /* display: flex; */
-    background-color:rgb(221, 164, 164);
-}.product-detail h2{
-padding: 0.5cm;
-}#btn:hover{
-    color: red;
-    background-color: black;
+    margin-left: 2cm;
+    font-size: 25px; 
+    /* line-height: 0.4cm; */
 }
-#btn{font-size: 15px;
-    margin: 10px 50px;
-    background-color: rgb(231, 217, 217);
-    height: 40px;
-    width: 50%;
-}.product-detail p{
-    margin-left: 1 cm;
-    padding-left: 1cm;
-    font-size: 20px;
-}.product-detail img{
-    margin: 0.5cm;
-}.allproduct{
-    margin: 0;
-    padding: 0;
-    background-color: black;
-}.moreproduct{
-    display: flex;
-    flex-wrap: wrap;
+.btn{ background-color: rgb(232, 222, 222);
+    border: 1px;
 }
+.btn:hover{
+    color: whitesmoke;
+    background-color: rgb(100, 12, 12);
+}
+
 .heading{
     text-align: center;
     font-size: 3.5rem;
@@ -149,79 +97,43 @@ padding: 0.5cm;
 .heading span{
     color: brown;
 }
-.servicepage  .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}.box-container.box{
-    flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0.5rem 1rem rgba(0, 0,0, 1);
-    border: .1rem solid rgba(0, 0, 0,3) ;
-    cursor: pointer;
-    border-radius: 0.5rem;
-    /* background-color: rgb(116, 129, 125); */
-}.box .image{
-    width:  100%;   
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top:-100%; 
-    left:0;
-}.contentse{
-    text-align: center;
-    background-color: rgb(218, 210, 210);
-    padding: 2rem;
-
-}.contentse h3{
-    font-size: 2.5rem;
-}
-.contentse p{
-    color: #636060;
-    padding: 1rem 0;
-    font-size: 1.5rem;
-}
-.box img{ 
-    /* top: 0; */
-    margin: 1.5rem 0;
-    /* height: 65vh; */
-}.box:hover .contentse{
-transform: translateY(0);
-}.box:hover .image {
-transform: translateY(100%);
-    
-}
-
-
+/* ....login-page... */
 .full-page{ 
     width: 100%;
     height: 100%;
-    background-image: url(../image/berry5.jpeg);
+    background-color: black;
+    background-image: url(/image/restaurant-16866439.jpg);
+    /* opacity: 0.5; */
     background-size: cover;
     background-position: center;
     /* background: transparent; */
     position: absolute;
 }.form-container{
-    /* background-color: rgb(191, 78, 78); */
+    margin-top: 1cm;
+    margin-left: 6cm;
+    width: 60%;
+    height: 70vh;
+    background-color: rgb(19, 17, 17);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
+    padding: 5rem;
+    opacity: 0.9;
 } #log-detail{
-    background-color: rgb(124, 29, 29);
+    background-color: rgb(240, 228, 228);
     height: 40.5vh;
     padding: 10px;
 
 }
 button{
     font-style: italic;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-radius: 2cm;
     margin: 0.5cm;
     height: 1cm;
     width: 5cm;
 }#log-detail h4{
+    color: rgb(0, 0, 0);
     font-style: italic;
     margin-left: 3cm;
     font-size: x-large;
@@ -231,5 +143,66 @@ button{
     color:rgb(243, 246, 248);
     font-size: 50px;
     margin-left: 13cm;
+    margin-top: 0.8cm;
 
+} 
+/* product page..... */
+.allproduct{
+    
+    padding: 1cm;
+    box-sizing: border-box;
+    background-color:rgb(172, 154, 154);
+}.product-detail{
+    display: flex;
+    margin: 1cm;
+flex-wrap: wrap;
+}
+.product-content img{
+    top: 2cm;
+    padding: 0.2cm;
+    height: 75vh;
+    width: 40vh;
+}
+#p{
+    /* padding: ; */
+/* margin-top: 2cm; */
+}
+#p h2{
+    color: rgb(215, 79, 26);
+    margin-left: 10cm;
+    font-style: italic;
+    /* padding-top: 1cm; */
+    /* margin-top: 6cm; */
+}
+
+/* contact page.... */
+
+.contact-page{
+    /* opacity: 0.6; */
+    background-color: #9f9898;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+padding-top: 12%;
+}.cont{ 
+    margin-top: 0.6cm;
+    padding-top: 1.2cm;
+    background-color: rgb(24, 34, 34);
+    height: 54vh;
+    padding-left: 1.2cm;
+    margin-bottom: 120vh;
+    width: 80vh;
+}.reservation{
+    padding: 4cm;
+    background-color: #636060;
+}.reservation fieldset{
+    padding-left: 1cm;
+    color: aliceblue;
+    font-size: 20px;
+}.reservation legend{
+    padding: 1cm;
+    font-size: 30px;
+    color: rgb(220, 187, 24);
+    padding-left: 4cm;
+    padding-right: 3cm;
 }
