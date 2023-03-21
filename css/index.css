@@ -97,50 +97,52 @@ font-style: italic;
 .heading span{
     color: brown;
 }
-/* ....login-page... */
-.full-page{ 
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    background-image: url(/image/restaurant-16866439.jpg);
-    /* opacity: 0.5; */
-    background-size: cover;
-    background-position: center;
-    /* background: transparent; */
-    position: absolute;
-}.form-container{
-    margin-top: 1cm;
-    margin-left: 6cm;
-    width: 60%;
-    height: 70vh;
-    background-color: rgb(19, 17, 17);
+/* /* ....login-page... , */
+.form-container{
     display: flex;
-    align-items: center;
+    padding-top: 4cm;
+    /* background-color: #333; */
+    height: 85vh;
+    padding: auto;
     justify-content: center;
-    padding: 5rem;
-    opacity: 0.9;
-} #log-detail{
-    background-color: rgb(240, 228, 228);
-    height: 40.5vh;
+    text-align: center;  
+}
+
+ #log-detail{
+    background-color: rgb(176, 59, 63);
+    height: 60vh;
     padding: 10px;
 
 }
 button{
+    font-size: 15px;
     font-style: italic;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(31, 25, 25);
     border-radius: 2cm;
     margin: 0.5cm;
     height: 1cm;
     width: 5cm;
-}#log-detail h4{
-    color: rgb(0, 0, 0);
+} button a{
+    text-decoration: none;
+    color: antiquewhite;
+    cursor: pointer;
+}
+button a:hover{
+    color:black;
+    background-color: rgb(154, 17, 17);
+    padding: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#log-detail h4{
+    color: rgb(27, 19, 19);
     font-style: italic;
     margin-left: 3cm;
     font-size: x-large;
 
 }.login-page h2{
     font-style: oblique;
-    color:rgb(243, 246, 248);
+    color:rgb(11, 12, 14);
     font-size: 50px;
     margin-left: 13cm;
     margin-top: 0.8cm;
@@ -148,47 +150,62 @@ button{
 } 
 /* product page..... */
 .allproduct{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
     
-    padding: 1cm;
-    box-sizing: border-box;
-    background-color:rgb(172, 154, 154);
-}.product-detail{
+}.product-all{
+    width: 20%;
+    padding: 2cm;
     display: flex;
     margin: 1cm;
-flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    border-radius: 20px;
+    /* background-color:#e2d4d4 ; */
+    /* margin: 1cm; */
+    gap: 20px;
 }
-.product-content img{
-    top: 2cm;
+.product-all img{
+    border-radius: 50%;
+    object-fit: cover;
     padding: 0.2cm;
-    height: 75vh;
-    width: 40vh;
+    height: 60vh;
+    width:20px
 }
-#p{
-    /* padding: ; */
-/* margin-top: 2cm; */
+.product1 p{
+    font-size: large;
+    padding-left: -50cm;
+   color: #342c2c; 
 }
-#p h2{
-    color: rgb(215, 79, 26);
-    margin-left: 10cm;
-    font-style: italic;
-    /* padding-top: 1cm; */
-    /* margin-top: 6cm; */
+.product1{
+    border-radius: 20px;
+    background-color: rgb(197, 178, 155);
+    /* display: flex; */
+    text-align: center;
+}.content-pro h2{
+    color:rgb(237, 29, 78);
+    margin: 0.4cm;
+    font-family: bold;
 }
+
+
 
 /* contact page.... */
 
 .contact-page{
     /* opacity: 0.6; */
-    background-color: #9f9898;
+background-image: url(/image/wine.webp);
+background-repeat: no-repeat;
+background-size: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
 padding-top: 12%;
 }.cont{ 
-    margin-top: 0.6cm;
+    /* margin-top: 0.4cm; */
     padding-top: 1.2cm;
-    background-color: rgb(24, 34, 34);
-    height: 54vh;
+    background-color: #746a6a;
+    height: 66vh;
     padding-left: 1.2cm;
     margin-bottom: 120vh;
     width: 80vh;
@@ -205,4 +222,152 @@ padding-top: 12%;
     color: rgb(220, 187, 24);
     padding-left: 4cm;
     padding-right: 3cm;
+}
+
+.img1{
+    margin-top: 3cm;
+    gap: 0;
+    background-color: #484141;
+    width: 85vh;
+}
+
+.img2{
+    margin-top: 3cm;
+    gap: 0;
+    background-color: #484141;
+width: 85vh;}
+    
+.img3{
+    margin-top: 3cm;
+    gap: 0;
+    background-color: #484141;
+width: 85vh;}
+.img1 h2{
+    text-align: center;
+    justify-content: center;
+    margin-left: 4cm;
+}.img2 h2{
+    text-align: center;
+    justify-content: center;
+    margin-left: 4cm;
+}
+.img3 h2{
+    text-align: center;
+    justify-content: center;
+    margin-left: 4cm;
+}
+.product-content{
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+
+
+.container1{ 
+
+    justify-content: center;
+    text-align: center;
+    padding-top:2cm;
+}
+.form1{
+    /* background-image: url(/image/br2.jpeg); */
+    margin-left: 7cm;
+    margin-top: 1cm;
+}
+.form1{
+    display: flex;
+
+}
+form {
+    font-size: 20px;
+    background-color: rgb(196, 183, 190);
+    height: 60vh;
+
+}.regi img{
+    height: 60vh;
+    width: 60vh;
+}
+a{
+    color: rgb(10, 6, 6);
+    text-decoration: none;
+    font-style: italic;
+    margin-top:10cm;
+}a:hover{
+    color: aliceblue;
+    background-color:rgb(154, 17, 17) ;
+}
+#vid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}@media (min-aspect-ratio:16/9){
+    #vid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    #vid{
+        width:auto;
+        height: 100%;}
+    }
+
+.about{
+
+    padding-top: 1cm;
+    display: flex;
+    justify-content: center;
+    /* background-color: bisque; */
+}.p1{
+    font-size: 20px;
+    /* opacity: 0.8; */
+    /* background-color: rgb(186, 135, 73); */
+    height: 50vh;
+    width: 60vh;
+    padding-left: 1cm;
+}
+.p2{
+    font-size: 20px;
+    /* opacity: 0.8; */ 
+    /* background-color: rgb(166, 122, 69); */
+    height: 50vh;
+    width: 60vh;
+    padding-left: 1cm;
+}
+.p1 h2{
+    color: #484141;
+    margin-bottom: 30px;
+
+}
+.p2 h2{
+    color: #484141;
+    margin-bottom: 30px;
+
+}
+#header h1{
+    padding-top: 2cm;
+    color: #484141;
+    padding-left: 12cm;
+    font-size: 50px;
+}
+
+.home-conte{
+    padding-top: 2cm;
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+}
+.par h2{
+    color: #524b4b; 
+    font-size: 40px;
+}
+.par h1{
+    color: #484141;
+    margin-left: 5cm;
+}
+.par p{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
 }
