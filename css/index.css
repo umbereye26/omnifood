@@ -2,30 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}.header{z-index: 1;
-    position: fixed;
+}.header{
+    margin-top: -2cm;
+    z-index: 1;
+    position :fixed;
     display: flex; 
-    height: 0cm;
+/* height: 25vh; */
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: #746a6a;
     justify-content: space-between;
-    padding:1cm;
+    
 } 
 .logoimage{
+   
    height: -2cm;
-   margin-top: -2cm;
+   /* margin-top: -2cm; */
    font-size: 10;
 }
 .navbar{
     line-height: 80px;
-margin-top: -1cm;
+/* margin-top: -2cm; */
     justify-content: space-between;
 }
 .navbar ul{ 
     
     /* background-color: #0e0d0d; */
     font-weight: bold;
-    color: white;
+    color: rgb(245, 231, 231);
     list-style: none;
     /* float: right; */
     gap: 20px;
@@ -100,24 +103,24 @@ font-style: italic;
 /* /* ....login-page... , */
 .form-container{
     display: flex;
-    padding-top: 4cm;
+    /* padding-top: 5cm; */
     /* background-color: #333; */
     height: 85vh;
-    padding: auto;
+    /* padding: auto; */
     justify-content: center;
     text-align: center;  
 }
 
  #log-detail{
-    background-color: rgb(176, 59, 63);
-    height: 60vh;
+    background-color: rgb(214, 201, 201);
+    height: 65vh;
     padding: 10px;
 
 }
 button{
     font-size: 15px;
     font-style: italic;
-    background-color: rgb(31, 25, 25);
+    background-color: rgb(157, 44, 44);
     border-radius: 2cm;
     margin: 0.5cm;
     height: 1cm;
@@ -268,7 +271,7 @@ width: 85vh;}
 
     justify-content: center;
     text-align: center;
-    padding-top:2cm;
+    padding-top:1cm;
 }
 .form1{
     /* background-image: url(/image/br2.jpeg); */
@@ -282,10 +285,10 @@ width: 85vh;}
 form {
     font-size: 20px;
     background-color: rgb(196, 183, 190);
-    height: 60vh;
+    height: 70vh;
 
 }.regi img{
-    height: 60vh;
+    height: 70vh;
     width: 60vh;
 }
 a{
@@ -338,7 +341,7 @@ a{
 }
 .p1 h2{
     color: #484141;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
 }
 .p2 h2{
@@ -361,7 +364,7 @@ a{
 }
 .par h2{
     color: #524b4b; 
-    font-size: 40px;
+    font-size: 25px;
 }
 .par h1{
     color: #484141;
@@ -369,5 +372,33 @@ a{
 }
 .par p{
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 20px;
+}
+.ser-page{
+background-color: antiquewhite;
+    margin: 2cm;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    /* width: 20%; */
+}.br{
+    /* background-color: antiquewhite; */
+    border-radius: 40px;
+}
+.form-order{
+    padding-top: 2cm;
+    /* background-color: #636060; */
+    justify-content: center;
+    padding-left:10cm;
+    background-image: url(/image/home.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+height: 85vh;
+}.form-order input{
+    height: 25px;
+    width: 55vh;
+    margin-left: 20px;
+
 }
