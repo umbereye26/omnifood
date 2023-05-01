@@ -82,13 +82,8 @@ font-style: italic;
     font-size: 25px; 
     /* line-height: 0.4cm; */
 }
-.btn{ background-color: rgb(232, 222, 222);
-    border: 1px;
-}
-.btn:hover{
-    color: whitesmoke;
-    background-color: rgb(100, 12, 12);
-}
+button{
+    border: none;}
 
 .heading{
     text-align: center;
@@ -101,7 +96,7 @@ font-style: italic;
 }
 /* /* ....login-page... , */
 .full-page{
-    background-image: url(/image/brf2.jpeg);
+    background-image: url(../image/brf2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -123,20 +118,22 @@ font-style: italic;
 }
 button{
     font-size: 15px;
-    font-style: italic;
+    /* font-style: italic; */
     background-color: rgb(157, 44, 44);
-    border-radius: 2cm;
+    border-radius: 20px;
     margin: 0.5cm;
-    height: 1cm;
-    width: 5cm;
+    height: 50px;
+    width: 150px;
 } button a{
     text-decoration: none;
     color: antiquewhite;
     cursor: pointer;
 }
 button a:hover{
-    color:black;
-    background-color: rgb(154, 17, 17);
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    /* background-color: rgb(154, 17, 17); */
     padding: 2px;
     border-radius: 3px;
     cursor: pointer;
@@ -162,13 +159,30 @@ button a:hover{
     padding-top: 60px;
 }
 #about-page{
-    padding-top: 2c,;
+    padding-top:20PX
      /* background-color: rgb(18, 14, 9); */
+}
+ .parag{
+    color:white;
+    font-size: 20px;
+    background-color: #fa8b8ba8;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 20px;
+}
+.parag h2{
+    padding-bottom: 20px;
+color: rgb(24, 23, 23);
+font-size: 25px;
+font-weight: 700;
+}
+.parag p{
+
 }
 /* product1..... */
 
 .allproduct{
-    background-color:#1d1010 ;
+    /* background-color:#1d1010 ; */
     
 }
 .allproduct h2{ 
@@ -178,10 +192,10 @@ button a:hover{
 }
 .product-all{
     padding-top: 40px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
    /* flex-wrap: wrap;    */
-    gap: 20px;
+    /* gap: 20px; */
 }
 .product-all img{
     border-radius: 50%;
@@ -226,7 +240,7 @@ button a:hover{
 
 /* contact page.... */
 #contactpage{
-    background-image: url(/image/BR.webp);
+    background-image: url(../image/BR.webp);
     height: 100vh;
 background-repeat: no-repeat;
 background-size: cover;
@@ -351,7 +365,7 @@ a{
         height: 100%;}
     }
 #about-page{
-    background-image: url(/image/food1.jpeg);
+    background-image: url(../image/food1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -439,7 +453,7 @@ background-color: antiquewhite;
     /* background-color: #636060; */
     justify-content: center;
     padding-left:10cm;
-    background-image: url(/image/home.jpeg);
+    background-image: url(../image/home.jpeg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -484,12 +498,13 @@ height: 85vh;
 @media screen and (max-width:800px)
 {
     .navbar ul{
-        display: flex;
+        display: none;
         line-height: 20px;
         font-size: 20px;
     }
     #logoimage{
-        /* margin-left: 20vh; */
+        /* margin-t: 20vh; */
+        margin-top: -24px;
         /* font-size: 200px; */
     }
 .homepage{
